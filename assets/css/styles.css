@@ -1887,12 +1887,8 @@ header {
 .home-demo_box.style-2 {
   padding: 12px;
   padding-bottom: 24px;
-  border-radius: 0px;
   position: relative;
   gap: 24px;
-}
-.home-demo_box.style-2 .image {
-  border-radius: 0;
 }
 .home-demo_box.style-2 .image img {
   object-position: top;
