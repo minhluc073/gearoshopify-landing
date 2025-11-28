@@ -683,6 +683,18 @@ a:hover {
   }
 }
 
+.btn-shopify {
+  display: inline-flex;
+}
+.btn-shopify img {
+  width: 200px;
+}
+@media (max-width: 767px) {
+  .btn-shopify img {
+    width: 150px;
+  }
+}
+
 #goTop {
   position: fixed;
   padding: 0;
@@ -1370,8 +1382,12 @@ header {
   background-color: #191e24;
   position: relative;
   overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 .slider-home .image img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   width: 100%;
   object-fit: cover;
   position: relative;
@@ -1805,6 +1821,12 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .home-demo_box .demo-name {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
 .home-demo_box .btn-view_demo {
   position: absolute;
   z-index: 3;
@@ -1942,6 +1964,17 @@ header {
     position: unset;
   }
 }
+@media (max-width: 575px) {
+  .home-demo_box:not(.style-2) {
+    padding: 12px 8px;
+    position: relative;
+  }
+  .home-demo_box:not(.style-2) .btn-view_demo {
+    padding: 12px 10px;
+    height: 36px;
+    display: none;
+  }
+}
 
 .home-demo_box.cmsoon .image::after {
   content: none;
@@ -1988,6 +2021,10 @@ header {
 .s-get-start .s_item.pst_7 {
   top: 105.2%;
   left: 93.5%;
+}
+
+.img-support img {
+  border-radius: 10px;
 }
 
 .wg-feature {

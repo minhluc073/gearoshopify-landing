@@ -866,6 +866,15 @@ a:hover {
         }
     }
 }
+.btn-shopify {
+    display: inline-flex;
+    img {
+        width: 200px;
+        @include res(md) {
+            width: 150px;
+        }
+    }
+}
 
 #goTop {
     position: fixed;
@@ -1642,8 +1651,11 @@ header {
         background-color: #191e24;
         position: relative;
         overflow: hidden;
-
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
         img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
             width: 100%;
             object-fit: cover;
             position: relative;
@@ -2101,6 +2113,10 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include res(md) {
+            font-size: 16px;
+            line-height: 16px;
+        }
     }
 
     .btn-view_demo {
@@ -2245,6 +2261,18 @@ header {
             }
         }
     }
+    @include res(sm) {
+        &:not(.style-2) {
+            padding: 12px 8px;
+            position: relative;
+
+            .btn-view_demo {
+                padding: 12px 10px;
+                height: 36px;
+                display: none;
+            }
+        }
+    }
 }
 .home-demo_box.cmsoon .image::after {
     content: none;
@@ -2299,7 +2327,9 @@ header {
         }
     }
 }
-
+.img-support img {
+    border-radius: 10px;
+}
 .wg-feature {
     background-color: #121212;
     border-radius: 16px;
