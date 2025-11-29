@@ -1887,12 +1887,8 @@ header {
 .home-demo_box.style-2 {
   padding: 12px;
   padding-bottom: 24px;
-  border-radius: 0;
   position: relative;
   gap: 24px;
-}
-.home-demo_box.style-2 .image {
-  border-radius: 0;
 }
 .home-demo_box.style-2 .image img {
   object-position: top;
@@ -1902,13 +1898,13 @@ header {
 .home-demo_box.style-2::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 1px solid;
-  border-image-source: linear-gradient(90deg, #fdb79e 0%, #feeacd 100%);
-  border-image-slice: 1;
+  inset: 0;
+  padding: 1px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #fdb79e 0%, #feeacd 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
