@@ -2177,12 +2177,12 @@ header {
     &.style-2 {
         padding: 12px;
         padding-bottom: 24px;
-        // border-radius: 16px;
+        border-radius: 0;
         position: relative;
         gap: 24px;
 
         .image {
-            // border-radius: 0;
+            border-radius: 0;
 
             img {
                 object-position: top;
